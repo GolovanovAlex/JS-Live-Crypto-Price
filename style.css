@@ -11,6 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #161616;
+  font-family: 'Mukta', sans-serif;
 }
 .coin {
   display: flex;
@@ -34,7 +35,6 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-family: 'Mukta', sans-serif;
 }
 .coin .coin-name h3 {
   font-size: 28px;
@@ -46,4 +46,23 @@ body {
   font-weight: 600;
   color: #aaa;
   margin: 6px 0 0 2px;
+}
+.coin .coin-price {
+  display: grid;
+  align-items: center;
+  text-align: right;
+  margin-left: auto;
+  padding: 8px 22px 0 0;
+}
+.coin .coin-price .price {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: -6px;
+  color: #30ff20;
+}
+.coin .coin-price .change {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: -30px;
+  color: #aaa;
 }
