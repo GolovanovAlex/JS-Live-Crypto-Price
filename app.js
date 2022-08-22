@@ -1,5 +1,6 @@
 fetch(
-  'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Clitecoin%2Cethereum%2Cdogecoin%2Ccardano%2Ctether&vs_currencies=usd&include_24hr_change=true')
+  'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Clitecoin%2Cethereum%2Cdogecoin%2Ccardano%2Ctether&vs_currencies=usd&include_24hr_change=true'
+)
   .then(res => res.json())
   .then(json => {
     const container = document.querySelector('.container');
@@ -8,12 +9,12 @@ fetch(
     for (let coin of coins) {
       const coinInfo = json[`${coin}`];
       const price = coinInfo.usd;
-      const change = coinInfo.usd_24_change.toFixed(5);
+      const change = coinInfo.usd_24h_change.toFixed(5);
 
       container.innerHTML += `
         <div class="coin ${change < 0 ? 'falling' : 'rising'} ">
           <div class="coin-logo">
-                <img src="images/${coin}.png" alt="bitcoin" />
+                <img src="images/${coin}.png" alt="${coin}" />
           </div>
               <div class="coin-name">
                 <h3>${coin}</h3>
