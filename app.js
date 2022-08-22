@@ -21,7 +21,7 @@ fetch(
                 <span>/USD</span>
               </div>
               <div class="coin-price">
-                <span class="price">${price}</span>
+                <span class="price">$ ${price}</span>
                 <span class="change">${change}</span>
               </div>
         </div>
