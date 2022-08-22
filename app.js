@@ -1,8 +1,7 @@
 fetch(
-  'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Clitecoin%2Cethereum%2Cdogecoin%2Ccardano%2Ctether&vs_currencies=usd&include_24hr_change=true'
-)
-  .then((res) => res.json())
-  .then((json) => {
+  'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Clitecoin%2Cethereum%2Cdogecoin%2Ccardano%2Ctether&vs_currencies=usd&include_24hr_change=true')
+  .then(res => res.json())
+  .then(json => {
     const container = document.querySelector('.container');
     const coins = Object.getOwnPropertyNames(json);
 
