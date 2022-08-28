@@ -1,6 +1,4 @@
-# JS-Live-Crypto-Price
-
-# CSS-Glitch-Effect
+# JS Live Crypto Price
 
 ### Use Skills
 
