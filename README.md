@@ -10,12 +10,13 @@
 
 [Demo Link <br>![CodePen](https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/AlexGolovanov/pen/YzvQaBe)
 
-![image](readme/gifscreen.webp)
+![image](readme/gif.png)
 
 ## Info
 
 Создано на основе видео с Youtube канала [CODE WITH HOSSEIN](https://www.youtube.com/c/CodeWithHossein).
 
+Обучение и работа с **JavaScript**, для отображения актуальной информации через api.
 
 ---
 
